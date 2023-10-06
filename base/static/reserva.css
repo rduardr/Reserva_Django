@@ -1,0 +1,17 @@
+h1 {
+  color: #007bff;
+}
+
+.custom-button {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.custom-button:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+.custom-form {
+  margin-top: 20px;
+}

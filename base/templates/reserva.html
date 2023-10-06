@@ -1,0 +1,25 @@
+{% load bootstrap5 %}
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservas Aqui</title>
+
+    <!-- Adicione o link para o arquivo CSS do Bootstrap -->
+    <link href="../static/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../static/reserva.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mt-5">Reservas Aqui</h1>
+      <form method="post" class="custom-form">
+        {% csrf_token %} {{ form.as_p }} {% buttons %}
+        <button type="submit" class="btn btn-primary custom-button">
+          Enviar Reserva
+        </button>
+        {% endbuttons %}
+      </form>
+    </div>
+  </body>
+</html>
